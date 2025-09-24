@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Привітання</title>
+</head>
+<body>
+
+<script>
+  // Виведення діалогового вікна з повідомленням.
+  alert("Натисніть OK, щоб побачити привітання.");
+
+  // Після натискання OK, змінюємо вміст body.
+  document.body.innerHTML = "<h1>Hello, [Забруцький Станіслав ]!</h1>";
+</script>
+
+</body>
+</html>
+<!DOCTYPE DOCKTYPE html>
+<html>
+<head>
+  <title>Вибір кнопки</title>
+</head>
+<body>
+
+<script>
+  // Виведення діалогового вікна з кнопками OK та Cancel.
+  const userChoice = confirm("Натисніть OK або Відміна.");
+
+  // Перевірка результату вибору користувача.
+  if (userChoice) {
+    // Якщо userChoice є true (натиснуто OK).
+    document.body.innerHTML = "<h1>Ви натиснули OK.</h1>";
+  } else {
+    // Якщо userChoice є false (натиснуто Відміна).
+    document.body.innerHTML = "<h1>Ви натиснули Відміна.</h1>";
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Таблиця множення</title>
+</head>
+<body>
+  <h1>Таблиця множення</h1>
+
+<script>
+ 
+  const number = 8;
+
+  // Отримуємо елемент, в який будемо додавати таблицю.
+  const body = document.body;
+
+  // Використовуємо цикл for для створення рядків таблиці.
+  for (let i = 1; i <= 10; i++) {
+    const result = number * i;
+    // Створюємо новий рядок HTML з результатом і додаємо його.
+    body.innerHTML += `<p>${number} x ${i} = ${result}</p>`;
+  }
+</script>
+
+</body>
+</html>
